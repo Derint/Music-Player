@@ -1,1 +1,95 @@
-{"root": {"name": "GRooVe BoX", "fg": "yellow", "font": "Helvetica", "fs": 50}, "rect-box": {"normal": "#652941", "error": "red", "success": "green", "found-song": "orange"}, "label": {"fg": "#FE1C0B", "error": "red", "search": "yellow"}, "url_lbl": {"fg": "white"}, "display": {"x": 1080, "y": 800, "color": "#1C221F"}, "image": {"w": 30, "h": 30, "play_song_wh": 30}, "hover-frame": {"min_w": 50, "max_w": 200, "frame-width": 60, "sideBarFrame_color": "#991E2B", "btn_highlight_color": "orange", "on_click_color": "yellow"}, "ctrl-frame": {"bg2": "#1A2421", "bg": "#161F27", "height_per": 0.25}, "listbox": {"bg": "#19849F"}, "input": {"bg": "#7FC6A4", "bg_invalid": "red", "f-out-fg": "#2C6348", "f-in-fg": "#1E1C21", "placeholder": " Search.. Music, Artist"}, "slider": {"pos": 400, "radius": 10, "height": 100, "cl_color": "#D05D11", "incl_color": "#616D5F", "color": "#9FE5B5"}, "main_frame": {"bg_color": "#19849F"}, "allowed_ext": [".lrc", ".mp3", ".wav", ".flac", ".aac", ".m4a", ".ogg"], "error_label": {"bg": "#5C3597", "fg": "#DDFAC6"}, "dwd_prog": {"circle_bg": "#2AF499", "img_bg": "#96031A"}, "song": {"title-fg": "#CDF3E4", "album-fg": "#DBFAF4"}, "inc_W": 10, "song_list": {"tbl_row_color": ["#B9E8F4", "#3EBFE0"], "highlight_color": "#C7D24B"}}
+{
+    "root": {
+        "name": "GRooVe BoX",
+        "fg": "yellow",
+        "font": "Helvetica",
+        "fs": 50
+    },
+    "rect-box": {
+        "normal": "#652941",
+        "error": "red",
+        "success": "green",
+        "found-song": "orange"
+    },
+    "label": {
+        "fg": "#FE1C0B",
+        "error": "red",
+        "search": "yellow"
+    },
+    "url_lbl": {
+        "fg": "white"
+    },
+    "display": {
+        "x": 1080,
+        "y": 800,
+        "color": "#1C221F"
+    },
+    "image": {
+        "w": 30,
+        "h": 30,
+        "play_song_wh": 30
+    },
+    "hover-frame": {
+        "min_w": 50,
+        "max_w": 200,
+        "frame-width": 60,
+        "sideBarFrame_color": "#991E2B",
+        "btn_highlight_color": "orange",
+        "on_click_color": "yellow"
+    },
+    "ctrl-frame": {
+        "bg2": "#1A2421",
+        "bg": "#161F27",
+        "height_per": 0.25
+    },
+    "listbox": {
+        "bg": "#19849F"
+    },
+    "input": {
+        "bg": "#7FC6A4",
+        "bg_invalid": "red",
+        "f-out-fg": "#2C6348",
+        "f-in-fg": "#1E1C21",
+        "placeholder": " Search.. Music, Artist"
+    },
+    "slider": {
+        "pos": 400,
+        "radius": 10,
+        "height": 100,
+        "cl_color": "#D05D11",
+        "incl_color": "#616D5F",
+        "color": "#9FE5B5"
+    },
+    "main_frame": {
+        "bg_color": "#19849F"
+    },
+    "allowed_ext": [
+        ".lrc",
+        ".mp3",
+        ".wav",
+        ".flac",
+        ".aac",
+        ".m4a",
+        ".ogg"
+    ],
+    "error_label": {
+        "bg": "#5C3597",
+        "fg": "#DDFAC6"
+    },
+    "dwd_prog": {
+        "circle_bg": "#2AF499",
+        "img_bg": "#96031A"
+    },
+    "song": {
+        "title-fg": "#CDF3E4",
+        "album-fg": "#DBFAF4"
+    },
+    "inc_W": 10,
+    "song_list": {
+        "tbl_row_color": [
+            "#B9E8F4",
+            "#3EBFE0"
+        ],
+        "highlight_color": "#C7D24B"
+    }
+}

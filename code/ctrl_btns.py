@@ -492,7 +492,6 @@ def dwd_file(root, ctrl_frame, canvas, url, prog_arc, tree, index, selected_item
         setting['dwd']="False"
         return
     
-    screen_size(root, mode='lock')
     fn = getFilename(url)
     key = rm_str(url, get_index_link(url, check_only=True)) #So if the index link change, no need to download the audio again
     audio_loc = tmp_fold + calc_Chk_sum(key) + SLASH
@@ -509,7 +508,7 @@ def dwd_file(root, ctrl_frame, canvas, url, prog_arc, tree, index, selected_item
             fn = fn[:25] + '...'
         show_msg(show_msg_lbl, f"Downloading: {getPlainText(fn)}", 5)
         with open(fp, "wb") as f:
-            for chunk in res.iter_content(1020):
+            for chunk in res.iter_content(1024 * 10):
                 canvas.itemconfigure(prog_arc, extent=getFill(s/tl))
                 s+=len(chunk)
                 f.write(chunk)
@@ -525,6 +524,7 @@ def dwd_file(root, ctrl_frame, canvas, url, prog_arc, tree, index, selected_item
         show_msg(show_msg_lbl, "Downloading Stop...")
         rm_dir(audio_loc)
         stop=False
+        _ = False
     
     elif _:
         # lyric_check(url, audio_loc) # 'll use later
@@ -539,9 +539,10 @@ def dwd_file(root, ctrl_frame, canvas, url, prog_arc, tree, index, selected_item
     state = DISABLED if stop else NORMAL
     reset_ctrl_canvas(root, ctrl_frame, canvas, state)
     setting['dwd']="False"
-    screen_size(root)
+
     if _:
         btn_play()
+
     slider_canvas.itemconfigure(slider_text, state="normal")
     show_msg_lbl.place_forget()
 

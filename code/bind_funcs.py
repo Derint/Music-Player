@@ -154,6 +154,12 @@ def on_resize(event):
     w, h = get_window_size(root)
     if pre_h == h and pre_w == w:
         return
+    
+    if setting['dwd']=='True':
+        show_msg_lbl.place_forget()
+        show_msg(show_msg_lbl, "Download in Progress, Cannot resize the window.")
+        root.geometry(f"{pre_w}x{pre_h}")
+        return
     pre_w, pre_h = w, h
     resize_window_frames()
 

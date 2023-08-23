@@ -10,7 +10,7 @@ from Helper_file import get_TK_image
 root = Tk()
 root.title("Derint: Groove Zone")
 root.tk.call('wm', 'iconphoto', root._w, get_TK_image(img_dict['app-icon']))
-root.geometry(f"{w}x{h}+230+20")
+root.geometry(f"{w}x{h}")
 root.configure(bg=root_bg_color)
 root.minsize(w, h)
 root.resizable(False, False)
