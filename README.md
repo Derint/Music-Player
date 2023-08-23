@@ -35,9 +35,9 @@ Now, brace yourself for the pièce de résistance. Remember those cherished trac
 **Install the Necessary Packages**:
 `pip install -r requirements.txt`
 
-**For Linux System - Installing `FFMPEG & Tkinter`**:
-`sudo apt update`
-`sudo apt-get install python3-tk`
+**For Linux System -** *Installing FFMPEG & Tkinter*:</br>
+`sudo apt update`</br>
+`sudo apt-get install python3-tk`</br>
 `sudo apt install ffmpeg`
 
 
